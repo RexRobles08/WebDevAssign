@@ -8,7 +8,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   // Render the corresponding EJS template with data
-  res.render('home', { name: 'Your Name' });
+  res.render('home', { name: 'Rex' });
 });
 
 module.exports = router;
