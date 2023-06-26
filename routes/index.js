@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home' });
+  res.render('index', { title: 'Home', username:'' });
 });
 
 /* GET about me page. */
@@ -25,6 +25,13 @@ router.get('/services', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact' });
 });
+// insert name to the home page
+router.post('/contact', (req, res, next) => {
+  //getting data from form
+  let newName =req.body.name;
 
+  console.log('sdfghjklghjkl;fghjkl;fghjkl ',newName)
+  res.render('index', {title : 'home' , username : 'Hi ' +newName+', '})
+});
 
 module.exports = router;

@@ -2,32 +2,38 @@
 
 <%- include partials/top_nav.ejs %>
 
-<h1> Contact Me: </h1>
-  <p> Email : rxcrobles@gmail.com</p>
-  <p> Phone no: +1 4379881181</p>
-  
+
   <main class="l-main" >
   <section class="contactme">
     <div class="container">
+      <div class="contact-infor">
+        <h1> Contact Me: </h1>
+  <p> Email : rxcrobles@gmail.com</p>
+  <p> Phone no: +1 4379881181</p>
+  
+      </div>
       <div class="contactme-content">
+        <form class="form" method="POST">
         <div class="mb-3">
           <p> For Further queries, please fill the form below :</p>
           <label for="exampleFormControlInput1" class="form-label">Name:</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" width: 40% placeholder="name@example.com">
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="name" width: 40% placeholder="John">
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Mobile Number:</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="+1 ### ### ####">
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Email Address:</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="johndoe@example.com">
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Message:</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Dear Rex, ">
         </div>
-        <button type="button"  class="btn btn-outline-success"  >Submit</button>
+        <button type="submit"  class="btn about-resume-btn "  >Submit</button>
+      </form>
+      </div>
       </div>
   </section>
 </main>

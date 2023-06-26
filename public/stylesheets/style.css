@@ -8,9 +8,12 @@ a {
 }
 */
 
+
+  
+
 .navbar-bg-color {
   background-color: #000!important;
-  
+  border-bottom: 0.5px solid #fff;
 }
 
 .white-color {
@@ -38,6 +41,43 @@ a.nav-link > i {
 
 }
 
+/* Home */
+section.projects {
+  background-color: #000;
+  color: #fff;
+}
+section.services ,
+section.contactme{
+  height: calc(100vh - 150px);
+    background-color: #000;
+    padding: 1rem 0;
+    color: #fff;
+    display: flex;
+    gap: 1rem;
+}
+
+section.home,
+section.about-me{
+  height: calc(100vh - 150px);
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  justify-content: center;
+  color: #fff;
+}
+
+section.projects {
+  padding-bottom: 45px;
+}
+.home-title {
+  font-size: 5rem;
+  color: #fff;
+}
+.home-icon > i {
+  font-size: 10rem;
+  color: green;
+}
+
 /* ABOUT ME */
 .about-content {
   text-align: center;
@@ -52,6 +92,10 @@ a.nav-link > i {
   margin: auto;
   padding: 2rem 0;
 }
+
+
+
+
  .home-img > img {
   width: 100%;
  }
@@ -62,7 +106,15 @@ a.nav-link > i {
   border: 2px solid #000;
   padding: 0.75rem 2rem;
   border-radius: 10px;
+  text-decoration: none;
+  color: #000;
  }
+
+ .about-resume-btn:hover {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+}
 
  /* PROJECTS */
 
@@ -123,6 +175,7 @@ a.nav-link > i {
 
 .project-subtitle {
   font-size: 1rem;
+  padding-right: 2rem;
 }
 
 /* SERVICES */
@@ -164,4 +217,30 @@ a.nav-link > i {
 
 .skill-title {
   font-size: 1.25rem;
+}
+
+.services-content {
+  margin-bottom: 2rem;
+}
+
+/* Contact */
+.contact-infor {
+  margin-bottom: 2rem;
+}
+
+
+/* footer */
+.navbar-bg-footer {
+  border-top: 0.5px solid #fff;
+  background-color: black!important;
+  justify-content: center;
+  
+}
+
+.navbar-jus-cont-center {
+  justify-content: center!important;
+}
+
+.container-fluid > h6 {
+  color: #fff;
 }
